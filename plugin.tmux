@@ -22,9 +22,13 @@ main() {
   done
 
   local -r opt_key="$(get_tmux_option "@vault-key" "u")"
+  local -r opt_new_key="$(get_tmux_option "@vault-key" "U")"
 
   tmux bind-key "$opt_key" \
     run "tmux split-window -l 10 \"$CURRENT_DIR/scripts/main.sh '#{pane_id}'\""
+
+  tmux bind-key "$opt_new_key" \
+    run "tmux split-window -l 10 \"$CURRENT_DIR/scripts/new.sh '#{pane_id}'\""
 }
 
 main "$@"
