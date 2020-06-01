@@ -55,7 +55,7 @@ In any tmux mode:
 On the initial use you will be prompted to login if you don't have a `~/.vault-token` file. Once
 the file is created you will have no keys in the cubbyhole for that token. Credentials can be added
 by running the following. Where `ldap` is the key for the account, `username` is the `ldap` username
-and `password` is the `ldap` password. `username` is optional but `password` is a reqired field.
+and `password` is the `ldap` password. `username` is optional but `password` is a required field.
 
 ```
 read -s pass
@@ -63,6 +63,10 @@ export pass
 vault write cubbyhole/ldap username=jdoe password="$pass"
 unset pass
 ```
+
+Alternatively you can use the utility helper to create new keys easily. This can be done by doing
+`PREFEX+U`. Note the capital `u`. This open a similar pane and will prompt for the key, `ldap` in the
+above example, username, `jdoe`, and password.
 
 ## Configuration
 
