@@ -59,7 +59,9 @@ and `password` is the ldap password. `username` is optional but `password` is a 
 
 ```
 read -s pass
-vault write cubbyhole/ldap username=jdoe password=$pass
+export pass
+vault write cubbyhole/ldap username=jdoe password="$pass"
+unset pass
 ```
 
 ## Configuration
