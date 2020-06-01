@@ -2,8 +2,6 @@
 
 > Access your vault cubbyhole login items within tmux!
 
-![](.github/screenshot.gif)
-
 This plugin allows you to access your vault cubbyhole items within tmux, using vault's CLI.
 
 ## Requirements
