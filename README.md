@@ -19,6 +19,7 @@ This plugin relies on the following:
 In any tmux mode:
 
 - `prefix + u` - list login items in a bottom pane.
+- `prefix + N` - create new login item in a bottom pane.
 
 ## Install
 
