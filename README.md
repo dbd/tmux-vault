@@ -83,6 +83,14 @@ set -g @vault-key 'x'
 
 Default: `'u'`
 
+#### Changing the default key-binding to create a new entry
+
+```
+set -g @vault-key 'U'
+```
+
+Default: `'N'`
+
 #### Setting the signin subdomain
 
 ```
